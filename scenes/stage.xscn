@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="23" version="1.1" version_name="Godot Engine v1.1.stable.d3b42e41b0">
+	<ext_resource path="res://scenes/stage.gd" type="Script"></ext_resource>
+	<ext_resource path="res://images/bg.png" type="Texture"></ext_resource>
+	<ext_resource path="res://scenes/labels.xscn" type="PackedScene"></ext_resource>
+	<ext_resource path="res://images/replay_btn.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/bomb_animation/finger_tapping/finger_tapping_000.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/bomb_animation/finger_tapping/finger_tapping_001.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/bomb_animation/finger_tapping/finger_tapping_002.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/bomb_animation/finger_tapping/finger_tapping_003.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/bomb_animation/finger_tapping/finger_tapping_004.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/bomb_animation/finger_tapping/finger_tapping_005.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/bomb_animation/finger_tapping/finger_tapping_006.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/bomb_animation/finger_tapping/finger_tapping_007.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/bomb_animation/finger_tapping/finger_tapping_008.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/bomb_animation/finger_tapping/finger_tapping_009.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/bomb_animation/finger_tapping/finger_tapping_010.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/bomb_animation/finger_tapping/finger_tapping_011.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/bomb_animation/finger_tapping/finger_tapping_012.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/bomb_animation/finger_tapping/finger_tapping_013.png" type="Texture"></ext_resource>
+	<ext_resource path="res://images/bomb_animation/finger_tapping/finger_tapping_014.png" type="Texture"></ext_resource>
+	<ext_resource path="res://fonts/oldsans.fnt" type="Font"></ext_resource>
+	<resource type="SpriteFrames" path="local://1">
+		<array name="frames" len="15" shared="false">
+			<resource  resource_type="Texture" path="res://images/bomb_animation/finger_tapping/finger_tapping_000.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/bomb_animation/finger_tapping/finger_tapping_001.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/bomb_animation/finger_tapping/finger_tapping_002.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/bomb_animation/finger_tapping/finger_tapping_003.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/bomb_animation/finger_tapping/finger_tapping_004.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/bomb_animation/finger_tapping/finger_tapping_005.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/bomb_animation/finger_tapping/finger_tapping_006.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/bomb_animation/finger_tapping/finger_tapping_007.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/bomb_animation/finger_tapping/finger_tapping_008.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/bomb_animation/finger_tapping/finger_tapping_009.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/bomb_animation/finger_tapping/finger_tapping_010.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/bomb_animation/finger_tapping/finger_tapping_011.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/bomb_animation/finger_tapping/finger_tapping_012.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/bomb_animation/finger_tapping/finger_tapping_013.png">  </resource>
+			<resource  resource_type="Texture" path="res://images/bomb_animation/finger_tapping/finger_tapping_014.png">  </resource>
+		</array>
+
+	</resource>
+	<resource type="Animation" path="local://2">
+		<string name="resource/name"> "finger_tap" </string>
+		<real name="length"> 1 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> ".:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 1 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<int> 0 </int>
+				<int> 14 </int>
+			</array>
+		</dictionary>
+
+	</resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 1 </int>
+			<string> "conns" </string>
+			<int_array  len="6"> 				3, 0, 85, 84, 2, 0 </int_array>
+			<string> "names" </string>
+			<string_array  len="86">
+				<string> "stage" </string>
+				<string> "Node2D" </string>
+				<string> "_import_path" </string>
+				<string> "visibility/visible" </string>
+				<string> "visibility/opacity" </string>
+				<string> "visibility/self_opacity" </string>
+				<string> "visibility/light_mask" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/rot" </string>
+				<string> "transform/scale" </string>
+				<string> "z/z" </string>
+				<string> "z/relative" </string>
+				<string> "script/script" </string>
+				<string> "__meta__" </string>
+				<string> "bg" </string>
+				<string> "Sprite" </string>
+				<string> "texture" </string>
+				<string> "centered" </string>
+				<string> "offset" </string>
+				<string> "flip_h" </string>
+				<string> "flip_v" </string>
+				<string> "vframes" </string>
+				<string> "hframes" </string>
+				<string> "frame" </string>
+				<string> "modulate" </string>
+				<string> "region" </string>
+				<string> "region_rect" </string>
+				<string> "label_container" </string>
+				<string> "replay_button" </string>
+				<string> "TextureButton" </string>
+				<string> "process/pause_mode" </string>
+				<string> "margin/left" </string>
+				<string> "margin/top" </string>
+				<string> "margin/right" </string>
+				<string> "margin/bottom" </string>
+				<string> "focus_neighbour/left" </string>
+				<string> "focus_neighbour/top" </string>
+				<string> "focus_neighbour/right" </string>
+				<string> "focus_neighbour/bottom" </string>
+				<string> "focus/ignore_mouse" </string>
+				<string> "focus/stop_mouse" </string>
+				<string> "size_flags/horizontal" </string>
+				<string> "size_flags/vertical" </string>
+				<string> "size_flags/stretch_ratio" </string>
+				<string> "disabled" </string>
+				<string> "toggle_mode" </string>
+				<string> "is_pressed" </string>
+				<string> "click_on_press" </string>
+				<string> "textures/normal" </string>
+				<string> "textures/pressed" </string>
+				<string> "textures/hover" </string>
+				<string> "textures/disabled" </string>
+				<string> "textures/focused" </string>
+				<string> "textures/click_mask" </string>
+				<string> "params/scale" </string>
+				<string> "params/modulate" </string>
+				<string> "finger_tap" </string>
+				<string> "AnimatedSprite" </string>
+				<string> "frames" </string>
+				<string> "animation" </string>
+				<string> "AnimationPlayer" </string>
+				<string> "playback/process_mode" </string>
+				<string> "playback/default_blend_time" </string>
+				<string> "root/root" </string>
+				<string> "anims/finger_tap" </string>
+				<string> "playback/active" </string>
+				<string> "playback/speed" </string>
+				<string> "blend_times" </string>
+				<string> "autoplay" </string>
+				<string> "Label" </string>
+				<string> "custom_fonts/font" </string>
+				<string> "range/min" </string>
+				<string> "range/max" </string>
+				<string> "range/step" </string>
+				<string> "range/page" </string>
+				<string> "range/value" </string>
+				<string> "range/exp_edit" </string>
+				<string> "rounded_values" </string>
+				<string> "text" </string>
+				<string> "align" </string>
+				<string> "valign" </string>
+				<string> "autowrap" </string>
+				<string> "uppercase" </string>
+				<string> "percent_visible" </string>
+				<string> "_on_replay_button_pressed" </string>
+				<string> "pressed" </string>
+			</string_array>
+			<string> "node_count" </string>
+			<int> 7 </int>
+			<string> "nodes" </string>
+			<int_array  len="301"> 				-1, -1, 1, 0, -1, 12, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 1, 12, 8, 13, 9, 0, 0, 0, 15, 14, -1, 21, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 10, 8, 5, 9, 6, 10, 7, 11, 1, 16, 11, 17, 1, 18, 12, 19, 13, 20, 13, 21, 3, 22, 3, 23, 7, 24, 14, 25, 13, 26, 15, 0, 0, 0, 1, 27, 16, 3, 2, 0, 7, 17, 13, 18, 0, 0, 0, 29, 28, -1, 31, 2, 0, 30, 19, 3, 13, 4, 2, 5, 2, 6, 3, 31, 20, 32, 21, 33, 22, 34, 23, 35, 0, 36, 0, 37, 0, 38, 0, 39, 13, 40, 1, 41, 19, 42, 19, 43, 2, 44, 13, 45, 13, 46, 13, 47, 13, 48, 24, 49, 25, 50, 25, 51, 25, 52, 25, 53, 25, 54, 6, 55, 14, 0, 0, 0, 57, 56, -1, 18, 2, 0, 30, 19, 3, 1, 4, 2, 5, 2, 6, 3, 7, 26, 8, 5, 9, 6, 10, 3, 11, 1, 58, 27, 23, 28, 17, 1, 19, 13, 20, 13, 24, 14, 13, 29, 0, 4, 0, 60, 59, -1, 10, 2, 0, 30, 19, 61, 3, 62, 5, 63, 30, 64, 31, 65, 1, 66, 2, 67, 32, 68, 33, 0, 4, 0, 69, 69, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 31, 34, 32, 35, 33, 36, 34, 37, 35, 0, 36, 0, 37, 0, 38, 0, 39, 1, 40, 1, 41, 19, 43, 2, 70, 38, 71, 5, 72, 2, 73, 2, 74, 2, 75, 5, 76, 13, 77, 13, 78, 39, 79, 7, 80, 7, 81, 13, 82, 13, 83, 40, 0 </int_array>
+			<string> "variants" </string>
+			<array  len="41" shared="false">
+				<node_path> "" </node_path>
+				<bool> True </bool>
+				<real> 1 </real>
+				<int> 1 </int>
+				<vector2> 32, 32 </vector2>
+				<real> 0 </real>
+				<vector2> 1, 1 </vector2>
+				<int> 0 </int>
+				<resource  resource_type="Script" path="res://scenes/stage.gd">  </resource>
+				<dictionary  shared="false">
+					<string> "__editor_plugin_screen__" </string>
+					<string> "Script" </string>
+					<string> "__editor_plugin_states__" </string>
+					<dictionary  shared="false">
+						<string> "2D" </string>
+						<dictionary  shared="false">
+							<string> "ofs" </string>
+							<vector2> -480, -383.52 </vector2>
+							<string> "snap_grid" </string>
+							<bool> True </bool>
+							<string> "snap_offset" </string>
+							<vector2> 0, 0 </vector2>
+							<string> "snap_pixel" </string>
+							<bool> False </bool>
+							<string> "snap_relative" </string>
+							<bool> False </bool>
+							<string> "snap_rotation" </string>
+							<bool> False </bool>
+							<string> "snap_rotation_offset" </string>
+							<real> 0 </real>
+							<string> "snap_rotation_step" </string>
+							<real> 0.261799 </real>
+							<string> "snap_show_grid" </string>
+							<bool> False </bool>
+							<string> "snap_step" </string>
+							<vector2> 10, 10 </vector2>
+							<string> "zoom" </string>
+							<real> 0.440127 </real>
+						</dictionary>
+						<string> "3D" </string>
+						<dictionary  shared="false">
+							<string> "ambient_light_color" </string>
+							<color> 0.15, 0.15, 0.15, 1 </color>
+							<string> "default_light" </string>
+							<bool> True </bool>
+							<string> "default_srgb" </string>
+							<bool> False </bool>
+							<string> "deflight_rot_x" </string>
+							<real> 0.942478 </real>
+							<string> "deflight_rot_y" </string>
+							<real> 0.628319 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
+							<string> "show_grid" </string>
+							<bool> True </bool>
+							<string> "show_origin" </string>
+							<bool> True </bool>
+							<string> "viewport_mode" </string>
+							<int> 1 </int>
+							<string> "viewports" </string>
+							<array  len="4" shared="false">
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "listener" </string>
+									<bool> True </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "listener" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "listener" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "listener" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+								</dictionary>
+							</array>
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "znear" </string>
+							<real> 0.1 </real>
+						</dictionary>
+						<string> "Script" </string>
+						<dictionary  shared="false">
+							<string> "current" </string>
+							<int> 1 </int>
+							<string> "sources" </string>
+							<array  len="2" shared="false">
+								<string> "res://scenes/bomb.gd" </string>
+								<string> "res://scenes/stage.gd" </string>
+							</array>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary  shared="false">
+						<string> "custom_args" </string>
+						<string> "-l $scene" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+				</dictionary>
+				<vector2> 208, 368 </vector2>
+				<resource  resource_type="Texture" path="res://images/bg.png">  </resource>
+				<vector2> 0, 0 </vector2>
+				<bool> False </bool>
+				<color> 1, 1, 1, 1 </color>
+				<rect2> 0, 0, 0, 0 </rect2>
+				<resource  resource_type="PackedScene" path="res://scenes/labels.xscn">  </resource>
+				<vector2> 30, 710 </vector2>
+				<dictionary  shared="false">
+					<string> "__editor_plugin_screen__" </string>
+					<string> "2D" </string>
+					<string> "__editor_plugin_states__" </string>
+					<dictionary  shared="false">
+						<string> "2D" </string>
+						<dictionary  shared="false">
+							<string> "ofs" </string>
+							<vector2> -82.1271, -191.242 </vector2>
+							<string> "snap_grid" </string>
+							<bool> True </bool>
+							<string> "snap_offset" </string>
+							<vector2> 0, 0 </vector2>
+							<string> "snap_pixel" </string>
+							<bool> False </bool>
+							<string> "snap_relative" </string>
+							<bool> False </bool>
+							<string> "snap_rotation" </string>
+							<bool> False </bool>
+							<string> "snap_rotation_offset" </string>
+							<real> 0 </real>
+							<string> "snap_rotation_step" </string>
+							<real> 0.261799 </real>
+							<string> "snap_show_grid" </string>
+							<bool> False </bool>
+							<string> "snap_step" </string>
+							<vector2> 10, 10 </vector2>
+							<string> "zoom" </string>
+							<real> 1.108033 </real>
+						</dictionary>
+						<string> "3D" </string>
+						<dictionary  shared="false">
+							<string> "ambient_light_color" </string>
+							<color> 0.15, 0.15, 0.15, 1 </color>
+							<string> "default_light" </string>
+							<bool> True </bool>
+							<string> "default_srgb" </string>
+							<bool> False </bool>
+							<string> "deflight_rot_x" </string>
+							<real> 0.942478 </real>
+							<string> "deflight_rot_y" </string>
+							<real> 0.628319 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
+							<string> "show_grid" </string>
+							<bool> True </bool>
+							<string> "show_origin" </string>
+							<bool> True </bool>
+							<string> "viewport_mode" </string>
+							<int> 1 </int>
+							<string> "viewports" </string>
+							<array  len="4" shared="false">
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "listener" </string>
+									<bool> True </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "listener" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "listener" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "listener" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+								</dictionary>
+							</array>
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "znear" </string>
+							<real> 0.1 </real>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary  shared="false">
+						<string> "custom_args" </string>
+						<string> "-l $scene" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+					<string> "__editor_show_subtree" </string>
+					<bool> True </bool>
+				</dictionary>
+				<int> 2 </int>
+				<real> 38 </real>
+				<real> 568 </real>
+				<real> 382 </real>
+				<real> 635 </real>
+				<resource  resource_type="Texture" path="res://images/replay_btn.png">  </resource>
+				<resource name=""></resource>				<vector2> 203, 541 </vector2>
+				<resource  resource_type="SpriteFrames" path="local://1">  </resource>
+				<int> 13 </int>
+				<dictionary  shared="false">
+					<string> "_editor_collapsed" </string>
+					<bool> True </bool>
+				</dictionary>
+				<node_path> ".." </node_path>
+				<resource  resource_type="Animation" path="local://2">  </resource>
+				<array  len="0" shared="false">
+				</array>
+				<string> "finger_tap" </string>
+				<real> -115 </real>
+				<real> 57 </real>
+				<real> 153 </real>
+				<real> 90 </real>
+				<resource  resource_type="Font" path="res://fonts/oldsans.fnt">  </resource>
+				<string> "TAP TO DIFFUSE" </string>
+				<real> -1 </real>
+			</array>
+			<string> "version" </string>
+			<int> 1 </int>
+		</dictionary>
+
+	</main_resource>
+</resource_file>

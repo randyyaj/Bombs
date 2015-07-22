@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r4.1">
+    <folder id="0">
+        <file id="0" name="bomb_idle.png" width="117" height="117" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="bomb_red.png" width="117" height="117" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="spark.png" width="146" height="146" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="bomb">
+        <animation id="0" name="bomb_glowing" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="100">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+                <key id="2" time="197">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="bomb_red">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="0" y="-0" pivot_x="0.492603" pivot_y="0.449943"/>
+                </key>
+                <key id="1" time="100" spin="0">
+                    <object folder="0" file="1" x="0" y="-0" pivot_x="0.492603" pivot_y="0.449943" scale_x="1.123731" scale_y="1.123731"/>
+                </key>
+                <key id="2" time="197" spin="0">
+                    <object folder="0" file="1" x="0" y="-0" pivot_x="0.492603" pivot_y="0.449943"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="1" name="bomb_glowing_000" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                </key>
+                <key id="1" time="101">
+                    <object_ref id="0" timeline="1" key="1" z_index="0"/>
+                </key>
+                <key id="2" time="201">
+                    <object_ref id="0" timeline="1" key="2" z_index="0"/>
+                </key>
+                <key id="3" time="205"/>
+            </mainline>
+            <timeline id="0" name="bomb_red">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" pivot_x="0.492603" pivot_y="0.449943"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="spark">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="-4.370181" y="6.243764" pivot_x="0.495181" pivot_y="0.506236" scale_x="0.084163" scale_y="0.084163"/>
+                </key>
+                <key id="1" time="101" spin="0">
+                    <object folder="0" file="2" x="-4.370181" y="6.243764" pivot_x="0.495181" pivot_y="0.506236" scale_x="1.448654" scale_y="1.448654"/>
+                </key>
+                <key id="2" time="201" spin="0">
+                    <object folder="0" file="2" x="-4.370181" y="6.243764" pivot_x="0.495181" pivot_y="0.506236" scale_x="0.058895" scale_y="0.058895"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>
